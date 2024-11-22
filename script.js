@@ -11,7 +11,7 @@ const categoriesData = {
                     "compare_at_price": "1299",
                     "vendor": "Manyvar",
                     "badge_text": "Wedding Special",
-                    "image": "https://plus.unsplash.com/premium_photo-1682090786689-741d60a11384",
+                    //"image": "https://plus.unsplash.com/premium_photo-1682090786689-741d60a11384",
                     "second-image": "https://plus.unsplash.com/premium_photo-1682090781379-4d177df45267"
                 },
                 {
