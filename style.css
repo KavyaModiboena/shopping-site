@@ -1,153 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
+*{ 
+    margin: 0; 
+    padding: 0; 
 }
-.container{
-    display:flex;
+.container{ 
+    display:flex; 
     justify-content: center;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-.h01{
+    justify-content: space-evenly; 
+    margin-top: 40px; } 
+.h01{ 
     text-shadow: 5px 5px gainsboro;
-}.categories {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;                /* small spacing between tabs */
-  margin-top: 20px;
-  flex-wrap: nowrap;       /* keeps them in one line */
-  overflow-x: auto;        /* allows horizontal scroll if needed */
-  scrollbar-width: none;   /* hides scrollbar (Firefox) */
-}
-.categories::-webkit-scrollbar {
-  display: none;           /* hides scrollbar (Chrome/Safari) */
-}
-
-.category-btn {
- padding: 8px 16px;       /* compact padding */
-  font-size: 14px;         /* slightly smaller text */
-  font-weight: 600;
-  background-color: lightgray;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  white-space: nowrap;     /* prevents breaking words like “Wom” */
-}
-
-.category-btn:hover {
-    background-color: #000;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
+}.categories { 
+    display: flex; 
     justify-content: center;
-
-}
-
-.product-card {
+    margin-top: 20px;
+} 
+.category-btn { 
+    padding: 10px 15px;
+    background-color:gainsboro;
+    color:#fff; 
+    width:15%; 
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: calc(33.33% - 20px); /* 3 cards per row on larger screens */
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    width:250px;
-    height:auto;
-    display: flex;
-    flex-direction: column ;
-    
+    border-radius:0px; 
+    cursor: pointer;
+    font-size: 20px;
 }
-
-.product-card img {
+.category-btn:hover { 
+    background-color: #000;
+} 
+.products { 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+} 
+.product-card {
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin: 10px; 
+    width: calc(33.33% - 20px); /* 3 cards per row on larger screens */ 
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+    width:250px; 
+    height:auto;
+    display: flex; 
+    flex-direction: column ; 
+} 
+.product-card img { 
     width: 100%;
     aspect-ratio: 3/4; /* maintains consistent shape for all cards */
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
-    
-}
-
+} 
 @media (max-width: 768px) {
     .product-card {
         width: calc(50% - 20px); /* 2 cards per row on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .product-card {
-        width: calc(100% - 20px); /* 1 card per row on small screens */
-    }
-}
+    } } 
+@media (max-width: 480px) { 
+    .product-card { width: calc(100% - 20px); /* 1 card per row on small screens */
+                  } } 
 .add-to-cart-btn{
     background-color: #000;
     color: #fff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px; 
     font-size: 15px;
     width:200px;
 }
 .par{
     text-decoration: wavy;
-}
-.title{
+} 
+.title{ 
     display:flex;
-    
-}
-.price{
+} 
+.price{ 
     display: flex;
     justify-content: space-between;
-    width:200px;
-    
-}
-.compare{
+    width:200px; 
+} 
+.compare{ 
     color:gray;
     text-decoration:line-through;
-    
-}
-.discount{
+} 
+.discount{ 
     color: red;
-    
-}
+} 
 .badge_text{
     background-color:#fff ;
     color:#000;
-    border-color: gainsboro ;
+    border-color: gainsboro ; 
     margin-left: 10px;
     margin-top: 10px;
     position: absolute;
-    padding: 5px;
+    padding: 5px; 
     font-size: 18px;
     border-radius: 2px;
-    
-
 }
-@media (max-width: 480px) {
-    .categories {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* .category-btn {
-        width: 80%;
-        margin-bottom: 10px;
-    } */
-}
-@media (max-width: 480px) {
-  .category-btn {
-    flex: 1 1 100%;
-    font-size: 14px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
