@@ -55,10 +55,10 @@
 
 .product-card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 3/4; /* maintains consistent shape for all cards */
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
-    z-index: 5;
     
 }
 
@@ -116,6 +116,7 @@
     
 
 }
+
 
 
 
