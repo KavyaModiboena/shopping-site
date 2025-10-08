@@ -12,26 +12,25 @@
     text-shadow: 5px 5px gainsboro;
 }.categories {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;             /* adds spacing between buttons */
-    margin-top: 20px;
-    flex-wrap: wrap;       /* allows wrapping on small screens */
-    width: 100%;           /* ensures it takes full screen width */
-    box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .category-btn {
-   padding: 10px 20px;
-    background-color: gainsboro;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-    font-size: 18px;
-    flex: 1;              /* makes buttons share space evenly */
-    min-width: 100px;     /* ensures text like “Women” fits properly */
-    text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1 1 120px; /* allows flexible width */
+  text-align: center;
 }
 
 .category-btn:hover {
@@ -129,12 +128,21 @@
         align-items: center;
     }
 
-    .category-btn {
+    /* .category-btn {
         width: 80%;
         margin-bottom: 10px;
-    }
+    } */
 }
-
+.category-btn.active {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 480px) {
+  .category-btn {
+    flex: 1 1 100%;
+    font-size: 14px;
+  }
+}
 
 
 
