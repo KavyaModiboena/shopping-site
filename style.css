@@ -13,7 +13,12 @@
 }.categories {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;             /* adds spacing between buttons */
     margin-top: 20px;
+    flex-wrap: wrap;       /* allows wrapping on small screens */
+    width: 100%;           /* ensures it takes full screen width */
+    box-sizing: border-box;
 }
 
 .category-btn {
@@ -129,6 +134,7 @@
         margin-bottom: 10px;
     }
 }
+
 
 
 
