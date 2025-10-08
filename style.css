@@ -14,23 +14,25 @@
     display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 6px;                /* small spacing between tabs */
   margin-top: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: border-box;
+  flex-wrap: nowrap;       /* keeps them in one line */
+  overflow-x: auto;        /* allows horizontal scroll if needed */
+  scrollbar-width: none;   /* hides scrollbar (Firefox) */
+}
+.categories::-webkit-scrollbar {
+  display: none;           /* hides scrollbar (Chrome/Safari) */
 }
 
 .category-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+ padding: 8px 16px;       /* compact padding */
+  font-size: 14px;         /* slightly smaller text */
+  font-weight: 600;
   background-color: lightgray;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  flex: 1 1 120px; /* allows flexible width */
-  text-align: center;
+  white-space: nowrap;     /* prevents breaking words like “Wom” */
 }
 
 .category-btn:hover {
@@ -133,16 +135,13 @@
         margin-bottom: 10px;
     } */
 }
-.category-btn.active {
-  background-color: black;
-  color: white;
-}
 @media (max-width: 480px) {
   .category-btn {
     flex: 1 1 100%;
     font-size: 14px;
   }
 }
+
 
 
 
