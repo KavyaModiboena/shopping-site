@@ -97,3 +97,14 @@
     border-radius: 2px;
 }
 
+@media (max-width: 480px) {
+  .category-btn .label {
+    display: none; /* hides text label */
+  }
+
+  .category-btn .icon {
+    font-size: 28px;
+  }
+}
+
+
